@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0C0499E1C99DC12000389B3 /* NodeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0C049901C99DC12000389B3 /* NodeController.cpp */; };
+		F0C0499F1C99DC12000389B3 /* NodeRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0C049921C99DC12000389B3 /* NodeRunner.cpp */; };
+		F0C049A01C99DC12000389B3 /* ArrayNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0C049941C99DC12000389B3 /* ArrayNode.cpp */; };
+		F0C049A11C99DC12000389B3 /* CTECArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0C049961C99DC12000389B3 /* CTECArray.cpp */; };
+		F0C049A21C99DC12000389B3 /* CTECList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0C049981C99DC12000389B3 /* CTECList.cpp */; };
+		F0C049A31C99DC12000389B3 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0C0499A1C99DC12000389B3 /* Node.cpp */; };
+		F0C049A41C99DC12000389B3 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0C0499C1C99DC12000389B3 /* Timer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F0C049831C99DBB6000389B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F0C049851C99DBB6000389B3 /* AfternoonNodes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AfternoonNodes; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C049901C99DC12000389B3 /* NodeController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NodeController.cpp; sourceTree = "<group>"; };
+		F0C049911C99DC12000389B3 /* NodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeController.h; sourceTree = "<group>"; };
+		F0C049921C99DC12000389B3 /* NodeRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NodeRunner.cpp; sourceTree = "<group>"; };
+		F0C049941C99DC12000389B3 /* ArrayNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayNode.cpp; sourceTree = "<group>"; };
+		F0C049951C99DC12000389B3 /* ArrayNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayNode.h; sourceTree = "<group>"; };
+		F0C049961C99DC12000389B3 /* CTECArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTECArray.cpp; sourceTree = "<group>"; };
+		F0C049971C99DC12000389B3 /* CTECArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTECArray.h; sourceTree = "<group>"; };
+		F0C049981C99DC12000389B3 /* CTECList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTECList.cpp; sourceTree = "<group>"; };
+		F0C049991C99DC12000389B3 /* CTECList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTECList.h; sourceTree = "<group>"; };
+		F0C0499A1C99DC12000389B3 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		F0C0499B1C99DC12000389B3 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		F0C0499C1C99DC12000389B3 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		F0C0499D1C99DC12000389B3 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0C049821C99DBB6000389B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0C0497C1C99DBB6000389B3 = {
+			isa = PBXGroup;
+			children = (
+				F0C0498F1C99DC12000389B3 /* Controller */,
+				F0C049931C99DC12000389B3 /* Model */,
+				F0C049861C99DBB6000389B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0C049861C99DBB6000389B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0C049851C99DBB6000389B3 /* AfternoonNodes */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0C0498F1C99DC12000389B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F0C049901C99DC12000389B3 /* NodeController.cpp */,
+				F0C049911C99DC12000389B3 /* NodeController.h */,
+				F0C049921C99DC12000389B3 /* NodeRunner.cpp */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0C049931C99DC12000389B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0C049941C99DC12000389B3 /* ArrayNode.cpp */,
+				F0C049951C99DC12000389B3 /* ArrayNode.h */,
+				F0C049961C99DC12000389B3 /* CTECArray.cpp */,
+				F0C049971C99DC12000389B3 /* CTECArray.h */,
+				F0C049981C99DC12000389B3 /* CTECList.cpp */,
+				F0C049991C99DC12000389B3 /* CTECList.h */,
+				F0C0499A1C99DC12000389B3 /* Node.cpp */,
+				F0C0499B1C99DC12000389B3 /* Node.h */,
+				F0C0499C1C99DC12000389B3 /* Timer.cpp */,
+				F0C0499D1C99DC12000389B3 /* Timer.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0C049841C99DBB6000389B3 /* AfternoonNodes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0C0498C1C99DBB6000389B3 /* Build configuration list for PBXNativeTarget "AfternoonNodes" */;
+			buildPhases = (
+				F0C049811C99DBB6000389B3 /* Sources */,
+				F0C049821C99DBB6000389B3 /* Frameworks */,
+				F0C049831C99DBB6000389B3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AfternoonNodes;
+			productName = AfternoonNodes;
+			productReference = F0C049851C99DBB6000389B3 /* AfternoonNodes */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0C0497D1C99DBB6000389B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CTEC;
+				TargetAttributes = {
+					F0C049841C99DBB6000389B3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = F0C049801C99DBB6000389B3 /* Build configuration list for PBXProject "AfternoonNodes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F0C0497C1C99DBB6000389B3;
+			productRefGroup = F0C049861C99DBB6000389B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0C049841C99DBB6000389B3 /* AfternoonNodes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0C049811C99DBB6000389B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0C049A31C99DC12000389B3 /* Node.cpp in Sources */,
+				F0C0499E1C99DC12000389B3 /* NodeController.cpp in Sources */,
+				F0C049A41C99DC12000389B3 /* Timer.cpp in Sources */,
+				F0C0499F1C99DC12000389B3 /* NodeRunner.cpp in Sources */,
+				F0C049A01C99DC12000389B3 /* ArrayNode.cpp in Sources */,
+				F0C049A21C99DC12000389B3 /* CTECList.cpp in Sources */,
+				F0C049A11C99DC12000389B3 /* CTECArray.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F0C0498A1C99DBB6000389B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F0C0498B1C99DBB6000389B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F0C0498D1C99DBB6000389B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F0C0498E1C99DBB6000389B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0C049801C99DBB6000389B3 /* Build configuration list for PBXProject "AfternoonNodes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0C0498A1C99DBB6000389B3 /* Debug */,
+				F0C0498B1C99DBB6000389B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0C0498C1C99DBB6000389B3 /* Build configuration list for PBXNativeTarget "AfternoonNodes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0C0498D1C99DBB6000389B3 /* Debug */,
+				F0C0498E1C99DBB6000389B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0C0497D1C99DBB6000389B3 /* Project object */;
+}
