@@ -6,6 +6,11 @@
  */
 
 #include "NodeController.h"
+#include <iostream>
+#include <stdlib.h>
+
+
+using namespace std;
 
 int main()
 {

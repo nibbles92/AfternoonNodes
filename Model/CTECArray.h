@@ -16,6 +16,7 @@ class CTECArray
 private:
 	int size;
 	ArrayNode<Type> * head;
+    void swap(int indexOne, int indexTwo);
 public:
 	CTECArray(int size);
 	virtual ~CTECArray();
@@ -23,8 +24,8 @@ public:
 	void set(int position, const Type& value);
 	Type get(int position);
     int indexOf(Type searchValue);
-    it nextndexOf(int startingIndex, Type)
-
+    int nextIndexOf(int startingIndex, Type);
+    void selectionSort();
 };
 
 #endif /* MODEL_CTECARRAY_H_ */

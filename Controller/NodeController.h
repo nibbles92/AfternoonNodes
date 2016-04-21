@@ -13,7 +13,7 @@
 #include "../Model/Node.cpp"
 #include "../Model/ArrayNode.cpp"
 #include "../Model/Timer.h"
-#include "NodeController.cpp"
+#include "../Model/CTECList.cpp"
 
 using namespace std;
 
@@ -23,7 +23,18 @@ private:
 	CTECArray<int> * notHipsterInts;
 	CTECList<int> * numbers;
 	Timer arrayTimer;
+    void sortData();
 	void testList();
+    
+    void swap(int first, int second);
+    void quicksort(int first, int last);
+    int parttion(int first, int last);
+    void doQuick();
+    
+    int * mergeData;
+    void doMergesort();
+    void mergesort(int data [], int size);
+    void merge(int data [], int sizeOne, int sizeTwo);
 
 public:
 	NodeController();

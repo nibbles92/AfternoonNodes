@@ -78,7 +78,7 @@ Type CTECArray<Type> :: get(int position)
 				return current->getValue();
 			}
 		}
-
+    return current->getValue();
 }
 
 
@@ -99,12 +99,13 @@ void CTECArray<Type> :: set(int position, const Type& value)
 				current->setValue(value);
 			}
 		}
-    
+}
+
 template<class Type>
-int CTECArray<Type> :: indexOff(Type searchValue)
+int CTECArray<Type> :: indexOf(Type searchValue)
 {
-    assert(this->size > 0)
-        
+    assert(this->size > 0);
+    
     ArrayNode<Type> * current = head;
     int indexNotFound = -1;
         
@@ -121,31 +122,38 @@ int CTECArray<Type> :: indexOff(Type searchValue)
     }
     return indexNotFound;
     }
+
+
+
+template <class Type>
+void CTECArray<Type> :: swap(int indexOne, int indexTwo)
+{
+    assert(indexOne < size  && indexTwo <size);
     
-    template<class Type>
-    int CTECArray<Type> :: indexOff(int startingIndex, Type searchValue)
+    Type temp = get(indexOne);
+    set(indexOne, get(indexTwo));
+    set(indexTwo, temp);
+}
+
+template <class Type>
+void CTECArray<Type> :: selectionSort()
+{
+    for(int outerLoop = 0; outerLoop < size -1; outerLoop++)
     {
-        assert(this->size > 0)
-        assert(startingIndex >=0 && startingIndex < this->size);
+        int selectedMinimum = outerLoop;
         
-        ArrayNode<Type> * current = head;
-        int indexNotFound = -1;
-        
-        for(int index = startingIndex < this->size; index++)
+        for(int innerLoop = outerLoop +1; innerLoop < size; innerLoop++)
         {
-            if(current->getValue() == searchValue)
+            if(get(innerLoop) < get(selectedMinimum))
             {
-                return index;
-            }
-            else
-            {
-                current = current->getValue();
+                selectedMinimum = innerLoop;
             }
         }
-        return indexNotFound;
+        
+        if(selectedMinimum != outerLoop)
+        {
+            swap(selectedMinimum, outerLoop);
+        }
     }
-    
-
-    
 }
 
