@@ -137,7 +137,7 @@ bool CTECBinaryTree<Type> :: contains(Type value, CTECBinaryTree<Type> * current
 }
 
 template<class Type>
-void CTECBinaryTree<Type> :: remove(const Type& value);
+void CTECBinaryTree<Type> :: remove(const Type& value)
 {
     TreeNode<Type>* current;
     TreeNode<Type> * trailing;
@@ -179,13 +179,13 @@ void CTECBinaryTree<Type> :: remove(const Type& value);
 }
 
 template<class Type>
-void CTECBinaryTree<Type> :: remove(TreeNode<Type>) * nodeToBeRemoved)
+void CTECBinaryTree<Type> :: remove(TreeNode<Type> * nodeToBeRemoved)
 {
     TreeNode<Type> * current;
     TreeNode<Type> * trailing;
     TreeNode<Type> * temp;
     
-    if(nodeToRemoved == nullptr)
+    if(nodeToBeRemoved == nullptr)
     {
         cerr << "" << endl;
     }
@@ -212,7 +212,7 @@ void CTECBinaryTree<Type> :: remove(TreeNode<Type>) * nodeToBeRemoved)
             current = nodeToBeRemoved->getLeftChild();
             trailing = nullptr;
             
-            while(curren->getrightChild() !=nullptr)
+            while(current->getrightChild() !=nullptr)
             {
                 trailing = current;
                 current = current->getRightChild();

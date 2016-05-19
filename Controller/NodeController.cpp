@@ -41,6 +41,7 @@ void NodeController :: start()
 }
 
 
+
 void NodeController::sortData()
 {
     /*
@@ -182,5 +183,30 @@ void NodeController::merge(int data[], int sizeOne, int sizeTwo)
     }
     delete [] temp;
     
+}
+
+void NodeController::testHashTable()
+{
+    CTECHashTable<int> tempTable;
+    HashNode<int> tempArray[10];
+    for(int spot = 0 spot < 10; spot++)
+    {
+        int randomValue = rand();
+        int randomKey = rand();
+        HashNode<int> temp = HashNode<int>(randomKey, randomValue);
+        tempTable.add(temp);
+        tempArray[spot] = temp;
+    }
+    bool test = testTable.contains(tempArray[0]);
+    string result;
+    if(test)
+    {
+        result = "it's there";
+    }
+    else
+    {
+        result = "not anywhere";
+    }
+    cout << result << endl;
 }
 
